@@ -62,16 +62,15 @@ Every item above is **currently running in production**. Planned items live in
 
 ---
 
-## Skills demonstrated
+## Stack 
 
 - **Linux systems administration** — Ubuntu Server host: OS install, service management, SSH configuration, host firewall.
 - **Containerization with Docker** — all platform services deployed and managed as containers on a single host.
 - **Network services & DNS** — Pi-hole as network-wide DNS for every device on the LAN, in the critical path of household connectivity.
 - **Home automation & IoT messaging** — Home Assistant with a Mosquitto MQTT broker as the messaging backbone.
 - **Defensive security / hardening** — SSH two-factor login, default-deny firewall, Fail2ban, attack-surface reduction by keeping the platform off the public internet, credentials kept off the host.
-- **Monitoring & alerting** — Uptime Kuma plus a self-built dashboard, with Pushover alerts for outages and breach attempts.
-- **Reliability engineering** — automatic service recovery and honest measurement of availability (~96%) with root-cause attribution.
-- **Engineering under constraints** — delivering a working, maintained production system on legacy hardware through pragmatic, defensible choices.
+- **Monitoring & alerting** — Uptime Kuma plus a dashboard, with Pushover alerts for outages and breach attempts.
+
 
 ---
 
