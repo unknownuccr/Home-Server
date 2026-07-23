@@ -37,4 +37,4 @@ Three controls run at the **host level** rather than in a container:
 
 - **Fail2ban** — monitors SSH authentication and bans hosts after repeated failed attempts.
 - **Host firewall** — default-deny on inbound traffic.
-- - **tshark** - Wireshark for the terminal.
+- **tshark** - Wireshark for the terminal.
