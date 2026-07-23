@@ -33,8 +33,9 @@ on the LAN.
 - **Uptime Kuma** — self-hosted uptime monitor that watches services and detects outages.
 - **Custom status dashboard** — self-built dashboard displaying server and system status.
 
-Three controls run at the **host level** rather than in a container:
+Four controls run at the **host level** rather than in a container:
 
 - **Fail2ban** — monitors SSH authentication and bans hosts after repeated failed attempts.
 - **Host firewall** — default-deny on inbound traffic.
 - **tshark** - Wireshark for the terminal.
+- **WiFi Keep-Alive** - A temporary solution for the instability issues due to aging hardware that pings the wifi network chip. 
