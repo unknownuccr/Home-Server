@@ -68,7 +68,7 @@ Every item above is **currently running in production**. Planned items live in
 - **Containerization with Docker** — all platform services deployed and managed as containers on a single host.
 - **Network services & DNS** — Pi-hole as network-wide DNS for every device on the LAN, in the critical path of household connectivity.
 - **Home automation & IoT messaging** — Home Assistant with a Mosquitto MQTT broker as the messaging backbone.
-- **Defensive security / hardening** — SSH two-factor login, default-deny firewall, Fail2ban, attack-surface reduction by keeping the platform off the public internet, credentials kept off the host.
+- **Defensive security / hardening** —  default-deny firewall, Fail2ban, attack-surface reduction by keeping the platform off the public internet, credentials kept off the host.
 - **Monitoring & alerting** — Uptime Kuma plus a dashboard, with Pushover alerts for outages and breach attempts.
 
 
