@@ -1,18 +1,13 @@
 # Overview 
- These documents were created to record the production of a home server. They contain no code and nothing to download. There is no AI tag on this project because it was mainly a physical hardware project rather than software. 
-
+ These documents were created to record the production of a home server. They contain no code and nothing to download. 
 # Self-Hosted Home Server & Home-Security Infrastructure
 
 > Infrastructure & systems-administration project.
-> **Status:** In production (~3 months) · Single-host · Linux + Docker · LAN-scoped (no public internet exposure).
+
 
 A self-hosted home server that I designed, built, and operate as the central platform for my
 household's home automation and home-security tooling. It runs entirely on local infrastructure
 under my own administration, no third-party cloud or subscription service in the control path.
-
-This repository is the documentation of that system: the architecture, the engineering decisions
-behind it (with the alternatives I weighed), the security posture, and the roadmap. It is written
-for technical reviewers evaluating infrastructure and systems-administration competency.
 
 > **Security note on this repo:** This documentation intentionally omits operational secrets —
 > IP addresses, ports, hostnames, and exact firewall rules. Controls are described at the design
@@ -26,7 +21,7 @@ for technical reviewers evaluating infrastructure and systems-administration com
 The system is a **single physical host** (a repurposed Dell XPS 410) running **Ubuntu Server**.
 Every application runs as a **Docker container** on that host. The entire platform sits behind the
 home router on the local network and is **not published to the internet**. Administration is over
-**SSH, restricted to the LAN**, requiring both an SSH key and a password. Monitoring and security
+**SSH requring a username and a password. Monitoring and security
 events are pushed to my phone via **Pushover**.
 
 Full detail: [`docs/architecture.md`](docs/architecture.md).
@@ -46,7 +41,7 @@ Full detail: [`docs/architecture.md`](docs/architecture.md).
 | Custom status dashboard | Self-built dashboard for server/system status | Self-built, hosted on the server |
 | Fail2ban | Intrusion prevention for SSH (ban after failed logins) | Host-level, protecting SSH |
 | Pushover | Push-notification delivery for monitoring/security alerts | Integrated alert channel |
-| SSH (key + password) | Encrypted, LAN-scoped remote administration | Host service; two-factor login |
+| SSH | Encrypted, LAN-scoped remote administration | Host service;|
 | Host firewall (default-deny) | Controls inbound network access to the host | Configured on the host |
 
 Every item above is **currently running in production**. Planned items live in
@@ -59,11 +54,11 @@ Every item above is **currently running in production**. Planned items live in
 | Document | Contents |
 |---|---|
 | [docs/architecture.md](docs/architecture.md) | System architecture, components, network position, data/alert flows |
-| [docs/engineering-decisions.md](docs/engineering-decisions.md) | Key decisions as *decision → alternatives → reasoning* |
+| [docs/engineering-decisions.md](docs/engineering-decisions.md) | Key decisions |
 | [docs/security.md](docs/security.md) | Security implementation and honest limitations |
 | [docs/monitoring.md](docs/monitoring.md) | Monitoring, alerting, reliability, measured availability |
 | [docs/roadmap.md](docs/roadmap.md) | Planned and in-progress work; known constraints |
-| [portfolio/](portfolio/) | The same project as a formatted Word document |
+
 
 ---
 
